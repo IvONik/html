@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;    
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* .nav-background{   
+    
+    background-color: #222;
+} */
+.container{
+    /* width: 1140px;
+    margin: 0 auto; */
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+}
+.left-nav{
+    display: flex;
+    /* justify-content: ; */
+    padding-top: 18px;    
+    padding-left: 15px;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+.search{
+margin-left: 41px;
+}
+.right-nav{
+    padding-top: 26px;
+    padding-bottom:15px;
+    padding-right: 15px;
+}
+/* .rectangle{
+    width: 12px;
+    height: 92px;
+    background: #F16D7F;
+    margin-right: 10px;
+} */
+.main{
+    
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between;
+    align-items: center; */
+    background-color:#F1E4E6;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px)
+    
+}
+/* .main-pic{
+    width: 50%;
+} */
+.main-pic{
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px)
+}
+.main-right{
+    /* display: flex;
+    align-items: center; */
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-top: 290px;
+    margin-bottom: 381px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+.title-main{
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;  
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em;    */
+}
+.subtitle-main{
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    /* display: block;
+    width: 377px; */
+}
+
+.main-content{
+    display: flex;
+}
+.main-background{
+    background: #F1E4E6;
+}
+.items-top{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    padding-top: 64px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+.item{
+    /* background-color: rgba(33, 22, 22, 0.70); */
+    position: relative;
+}
+.long{
+ margin-bottom: 96px;
+}
+
+.sale-content{ 
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.long{
+    min-height: 180px;
+    grid-column: 1 / -1;
+}
+.sale-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.sale-heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goods{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.title-catalog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-text{
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+.text{
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+.layer{
+    background: #F7E4E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.good-title{ 
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+.good-text{
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+.good-price{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.good-description{
+    padding: 24px 16px;
+    background:#F8F8F8;
+}
+.button{
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    width: 212px;
+    border:#F26376 solid 2px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+/* @media(max-width: 1024px){
+.items-top{    
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;    
+}  
+.long{
+    width: 100%;
+    width: 750px;
+} 
+} */
+@media(max-width: 767px){
+.container{
+    max-width: 343px;
+    /* margin: 0 auto; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-left: calc(50% - 172px);
+    padding-right: calc(50% - 172px);
+}
+
+.main-pic{
+    display: none;
+}
+.main-right{
+    margin-top: 148px;
+    margin-bottom: 149px;
+}
+.rectangle{
+    height: 61px;
+    margin-right: 15px;
+}
+.title-main{
+    color: #222;
+    font-family: Lato;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.subtitle-main{
+    color: #222;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.items-top{
+    grid-template-columns: repeat(1, 343px);
+}
+.crop{
+    width: 100%
+}
+.goods{
+    grid-template-columns: repeat(1, 358px);
+}
+.sale-content-long{
+    top: 30%;   
+}
+.long{
+    margin-bottom: 0;
+}
+}
+
+@media(max-width: 320px){
+.container{
+    max-width: 315px;
+    /* margin: 0 auto; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-left: calc(50% - 157px);
+    padding-right: calc(50% - 157px);
+}  
+.items-top{
+    grid-template-columns: repeat(1, 313px);
+}
+.long{
+    width: 100%;
+    max-width: 315px;
+} 
+.sale-content-long{
+    display: none;
+}
+.goods{
+    grid-template-columns: repeat(1, 315px);
+}
+.good-img{
+    
+    width: 100%;
+}
+}
