@@ -101,16 +101,31 @@ margin-left: 41px;
     
 }
 .main-pic{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-393px, -50%);
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px)
+}
+.rectangle{
+    height: 61px;
+    width: 12px;
+    margin-right: 15px;
+    color: #F16D7F;
+    
 }
 .main-right{
     /* display: flex;
     align-items: center; */
-    border-left: 12px solid #F16D7F;
+    /* border-left: 12px solid #F16D7F; */
     padding-left: 16px;
-    margin-top: 290px;
-    margin-bottom: 381px;
+    display: flex;
+    margin-left: calc(50% - -41px);
+    height: 761px;
+
+    /* margin-top: 290px;
+    margin-bottom: 381px; */
 }
 .title{
     display: flex;
@@ -455,7 +470,7 @@ margin-left: 41px;
 .button-logo:hover path{
     fill: white;
 }
-@media(min-width: 1140px){
+@media(min-width: 1140px){ 
 .items-top{    
     grid-template-columns: repeat(3, 360px);
     justify-content: center;    
@@ -466,6 +481,15 @@ margin-left: 41px;
 .good-img{
     width: 100%;
 }
+
+}
+@media(max-width: 1140px){
+.layer-img{
+    height: 277px;
+}  
+.img__link-layer {
+    height: -webkit-fill-available;
+} 
 }
 @media(max-width: 1024px){
 .items-top{    
@@ -484,9 +508,11 @@ margin-left: 41px;
     transform: translate(-50%, -50%);
 }
 .main-right{
-    margin-left: calc(50% - -74px);
-    margin-top: 290px;
-    margin-bottom: 381px;
+    margin-left: calc(50% - 60px);
+    /* margin-top: 290px;
+    margin-bottom: 381px; */
+    height: 366px;
+    
 }
 .goods{
     grid-template-columns: repeat(3, 235px);
@@ -498,7 +524,7 @@ margin-left: 41px;
     width: 100%;
 }
 .layer-img{
-    height: 361px;
+    height: 277px;
 }
 .good-description{ 
     height: -webkit-fill-available;
@@ -515,8 +541,8 @@ margin-left: 41px;
 }
 .main-right{
     margin-left: calc(50% - -41px);
-    margin-top: 138px;
-    margin-bottom: 151px;
+    /* margin-top: 138px;
+    margin-bottom: 151px; */
 }
 .title-main{
     color: #222;
@@ -589,14 +615,11 @@ margin-left: 41px;
 .main-right{
     /* display: flex;
     justify-content: center; */
-    margin-top: 148px;
-    margin-bottom: 149px;
+    /* margin-top: 148px;
+    margin-bottom: 149px; */
     margin-left: 0;
 }
-.rectangle{
-    height: 61px;
-    margin-right: 15px;
-}
+
 .title-main{
     color: #222;
     font-family: Lato;
