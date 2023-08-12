@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ @import 'vars';
+ @import 'mixin';
+
+.title{
+    color: green;
+    display: flex;
+}
+.colortext{
+    color: $colorText;
+}
+.nav{
+    display: flex;
+    gap: $navGap;
+    &__link{
+        text-decoration: none;
+        @extend %fontstyle;
+    }
+}
+.content{
+    @include center();
+    display: flex;
+    gap: $navGap;
+    &__item{
+        // width: calc(($witdhSite-($navGap*3)) /4);
+        width: $witdhSite/4 ;
+        height: 200px;
+        border: $line;
+    }
+}

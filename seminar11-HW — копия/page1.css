@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.top-head {
+  background: #F8F3F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.top-head-heading {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.breadcrumbs-link {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.breadcrumbs-link-page {
+  color: #F16D7F;
+  font-weight: 700;
+}
+
+.slider {
+  display: flex;
+  background-color: #F7F7F7;
+  justify-content: center;
+  position: relative;
+}
+.slider-arrowbox-left {
+  background-color: rgba(42, 42, 42, 0.15);
+  position: absolute;
+  top: 373px;
+  left: 35px;
+}
+.slider-arrowbox-right {
+  background-color: rgba(42, 42, 42, 0.15);
+  position: absolute;
+  top: 373px;
+  right: 35px;
+  transform: scale(-1, 1);
+}
+.slider-arrowbox-left:hover path {
+  fill: #F16D7F;
+}
+.slider-arrowbox-right:hover path {
+  fill: #F16D7F;
+}
+
+.product {
+  width: 360px;
+  margin-bottom: 128px;
+}
+.product-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.product-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product-content {
+  padding: 24px 20px 20px 20px;
+  background: #F8F8F8;
+}
+.product-name {
+  color: #000;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product-text {
+  color: #5D5D5D;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.product-price {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content-box {
+  border: 1px solid #EAEAEA;
+  padding: 64px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -47px;
+  background-color: #FFF;
+}
+.content-subtitle {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+.content-subtitle-line {
+  width: 63px;
+  height: 3px;
+  background-color: #F16D7F;
+  margin-bottom: 12px;
+}
+.content-title {
+  color: #4D4D4D;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+.content-text {
+  color: #5E5E5E;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.content-text-line {
+  width: 641px;
+  height: 1px;
+  background-color: #EAEAEA;
+  margin-bottom: 65px;
+}
+.content-price {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 65px;
+}
+.content-choose {
+  display: flex;
+  align-items: center;
+}
+.content-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-nav-choose {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 9px;
+}
+.content-nav-choose-arrow {
+  margin-right: 23px;
+}
+
+.content-nav li {
+  list-style: none;
+  position: relative;
+  color: #5E5E5E;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 48px;
+  background-color: #121010;
+  z-index: 10;
+}
+
+.content-nav a {
+  line-height: 20px;
+  transition: all 0.5s;
+  background-color: #74c469;
+  z-index: 10;
+}
+
+.content-nav a:hover {
+  color: #F16D7F;
+}
+
+.content-nav li:hover {
+  color: #F16D7F;
+}
+
+.content-nav ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+  width: 100%;
+  background: brown;
+  z-index: 10;
+}
+
+.content-nav li:hover > ul {
+  display: block;
+}
+
+.content-nav ul ul {
+  display: none;
+  top: 0;
+  left: 100%;
+  background-color: #4f1717;
+  z-index: 10;
+}
+
+.content-nav-choose-arrow {
+  margin-bottom: 2px;
+}
+
+.content-nav-choose-arrow:hover path {
+  fill: #F16D7F;
+}/*# sourceMappingURL=page1.css.map */

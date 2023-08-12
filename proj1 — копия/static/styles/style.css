@@ -1,0 +1,26 @@
+/* сбросить все автоматические отступы: */
+
+p{
+    background-color: aquamarine;
+    font-size: 24px;
+    
+    /* отступы внутрь от границ контейнера: */
+    /* padding: 3 px; */
+}
+
+.conteiner{
+    /* block по всей ширине*/
+    /* inline-block для адоптивной верстки, 
+    указываем, к примеру
+    только высоту, а по ширине он сам подстраивается. */
+    /* inline  ограничен содержимым */
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.conteiner>img{
+    max-width: 300px;
+}
+.main{
+    text-align: center;
+}

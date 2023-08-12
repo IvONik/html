@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+span {
+    font-style: italic;     
+}
+/* обращаемся к конкретному участку */
+.name_id {
+    font-size: xx-large;
+}
+/* ol {
+    list-style:lower-alpha;
+} */
+.list-conteiner{
+    display: inline-block;
+    border-style: solid;
+    /* ширина границы */
+    border-width: 0.5px;
+    padding-right: 20px;
+}
+.list-conteiner>p{
+    text-align: center;
+    font-weight: bold;
+}
+.img-conteiner{
+    float: right;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0.5px;
+    margin-left: 10px;
+}
+.img-conteiner>div{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.logo-html{
+max-width: 70px;
+}
+
+/* верхняя навигационная панель */
+.nav-conteiner{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(92, 164, 140);
+}
+.nav-conteiner>nav>ul{
+    display: flex;
+    /* убираем точки с пунктов списка: */
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+
+}
+.nav-conteiner>nav>ul>li>a{
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+
+@media (max-width: 900px){
+    .nav-conteiner{
+        flex-direction: column;
+    }
+}

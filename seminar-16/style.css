@@ -1,0 +1,21 @@
+a:hover{
+color: red;
+}
+a:active{
+    color: green;
+}
+.menu-list:first-child{
+    text-transform: uppercase;
+}
+.menu-list:last-child{
+    font-weight: bold;
+}
+.menu-list:nth-child(3){
+    background-color: orange;
+}
+.icons:hover path{
+    fill: aqua;
+}
+.icons:active path{
+    fill: rgb(113, 15, 71);
+}

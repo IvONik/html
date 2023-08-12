@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+.top{
+  padding-top: 51px;
+  
+}
+.nav-link{
+  text-decoration: none;
+}
+.top_content{
+  margin-top: 96px;
+}
+.title{
+  margin-bottom: 17px;
+}
+.buttons{
+  margin-top: 37px;
+}
+.logo{
+  padding-top: 97px;
+}

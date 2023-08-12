@@ -1,0 +1,284 @@
+@import 'vars';
+
+*{ 
+    margin: 0;
+    padding: 0;}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.center{
+    padding-left: calc(50% - $widhtSite/2);
+    padding-right: calc(50% - $widhtSite/2);
+}
+.top-head{
+    background:#F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.top-head-heading{
+    color: $colorSelectSite;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.breadcrumbs-link{
+    color: #636363;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.breadcrumbs-link-page{
+    color: $colorSelectSite;
+    font-weight: 700;    
+}
+.slider{
+    display: flex;
+    background-color: #F7F7F7;
+    justify-content: center;
+    position: relative; 
+
+    &-arrowbox-left{
+        background-color:rgba(42, 42, 42, 0.15);
+        position: absolute;
+        top: 373px;
+        left: 35px;
+        // left:calc($widhtSite - 50%);margin-left: auto;
+        
+    }
+    &-arrowbox-right{
+        background-color:rgba(42, 42, 42, 0.15);
+        position: absolute;
+        top: 373px;
+        right: 35px;
+        transform: scale(-1, 1)
+    }
+    &-arrowbox-left:hover path{
+        fill: $colorSelectSite;
+    }
+    
+    &-arrowbox-right:hover path{
+        fill: $colorSelectSite;
+    }
+}
+.product{
+    width: ($widhtSite - $gapGrid*2) / 3;
+    margin-bottom: 128px;
+    
+        &-box{
+            display: flex;
+            justify-content: center;
+            gap: $gapGrid;
+        }
+        &-img{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        &-content{
+            padding: 24px 20px 20px 20px;
+            background: #F8F8F8;
+        }
+        &-name{
+            color: #000;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            
+        }
+        &-text{
+            color: #5D5D5D;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 20px;
+            margin-bottom: 18px;
+        }
+        &-price{
+            color: $colorSelectSite;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+}
+// .slider{
+//     width: 597px;
+    
+//     // position: absolute;
+//     // top: 50%;
+//     // left: 50%;
+//     // transform: translate(-50% -50%);
+
+//         &-line{
+//             display: flex;
+//             overflow: hidden;
+//             transition: all 1s;
+//         }
+//         &-img{
+//             width: 597px;
+//             height: 724px;
+//             border: 1px solid;
+//         }
+//         &-navigation{
+//             // position: absolute;
+//             // bottom: 16px;
+//             // left: 50px;
+//             // transform: translateX(-50%);
+//             display: flex;
+//                 &-bar{
+//                     height: 8px;
+//                     width: 30px;
+//                     margin: 6px;
+//                     background-color: #5D5D5D;
+//                 }
+//         }
+//         &-button{
+//             // position: absolute;
+//             // top: 50%;
+//         }
+// }
+.content{ 
+
+    &-box{
+        // width: $widhtSite;
+        // height: 600px;
+        border: 1px solid #EAEAEA;
+        padding: 64px 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -47px;
+        background-color: #FFF;;
+    }
+
+    &-subtitle{
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+    &-subtitle-line{
+        width: 63px;
+        height: 3px;
+        background-color: $colorSelectSite;
+        margin-bottom: 12px;
+    }
+    &-title{
+        color: #4D4D4D;
+        font-family: Lato;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 48px;
+    }
+    &-text{
+        color: #5E5E5E;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+    &-text-line{
+        width: 641px;
+        height: 1px;
+        background-color:#EAEAEA;
+        margin-bottom: 65px;
+    }
+    &-price{
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 65px;
+    }
+    &-choose{
+        display: flex;
+        align-items: center;
+    }
+    &-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &-choose{
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: 9px;
+
+                &-arrow{
+                    margin-right: 23px;
+                }                
+        }        
+    }
+}
+.content-nav li{
+    list-style: none;  
+    position: relative;
+    color: #5E5E5E;    
+    font-family: Lato;
+    font-size: 14px;    
+    font-weight: 300;   
+    margin-bottom: 48px; 
+}
+.content-nav a {
+    // height: 40px;
+    line-height: 40px;
+    transition: all .5s;
+}
+.content-nav a:hover{
+    color: $colorSelectSite;        
+}
+.content-nav li:hover{
+    color: $colorSelectSite
+}
+.content-nav ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+    width: 100%;    
+  }  
+  .content-nav li:hover > ul {
+    display: block;
+  }
+  .content-nav ul ul {
+    display: none;
+    top: 0;
+    left: 100%;
+  }
+  .content-nav-choose-arrow{
+    margin-bottom: 2px;
+  }
+  .content-nav-choose-arrow:hover path{
+    fill: $colorSelectSite;
+  }
