@@ -28,18 +28,26 @@ body{
     line-height: normal;
 
 }
-.breadcrumbs-link{
-    color: #636363;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+.breadcrumbs{
+    display: flex; 
+    gap: 5px;
+
+    &-link{
+        color: #636363;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+            &-page{
+                color: $colorSelectSite;
+                font-weight: 700;  
+            }
+      
+    }
 }
-.breadcrumbs-link-page{
-    color: $colorSelectSite;
-    font-weight: 700;    
-}
+
 .slider{
     display: flex;
     background-color: #F7F7F7;
@@ -115,6 +123,31 @@ body{
             line-height: normal;
         }
 }
+a { 
+    display: block; 
+    position: relative;     
+}
+
+.img-link:after { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;     
+    opacity: 0; 
+    background: url(img/Add\ to\ cart.svg) no-repeat center center; 
+    background-color: rgba(58, 56, 56, 0.86);
+}
+.img-link:hover:after { 
+    opacity: 0.6;     
+    transition: 0.5s;
+}
+// .img__link-layer{
+//     width: -webkit-fill-available;
+//     display: flex;
+//     justify-content: center;
+// }
 // .slider{
 //     width: 597px;
     
@@ -238,6 +271,43 @@ body{
                     margin-right: 23px;
                 }                
         }        
+    }
+}
+.details-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    gap: 23px;
+}
+.sort1{
+    position: relative;
+    &-summary{
+        @include burgerSummary;
+        cursor: pointer;
+    }
+    // &-summary:hover path{
+    //     color: $colorSelectSite;
+    // }
+    &-heading:hover{
+        color: $colorSelectSite;
+    }
+    // &-heading:hover path{
+    //     fill: $colorSelectSite;
+    // }
+    &-heading{
+        @include burgerHeading;
+        
+    }
+    &-link{
+        @include burgerContent;
+    }
+    &-link:hover{
+        color: $colorSelectSite
+    }
+    &-link-box{        
+        @include burgerMenu;
+        width: -webkit-fill-available;
+        z-index: 10;   
     }
 }
 .content-nav li{

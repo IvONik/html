@@ -1,5 +1,41 @@
 $colorSelectSite: #F16D7F;
 $widhtSite:1140px;
 $gapGrid:30px;
+$mainFont: Lato;
+$burgerFont: Roboto;
 
 
+@mixin burgerMenu{
+    background: #FFF;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    padding: 7px 30px 0px 9px;
+    position: absolute;
+    // left: -9px;
+    
+}
+
+@mixin burgerSummary{
+    display: flex;
+    align-items: center;
+    gap:11px;
+}
+@mixin burgerHeading{
+    color: #6F6E6E;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@mixin burgerContent{
+    display: flex;
+        align-items: center;
+        gap: 9px;
+        color: #6F6E6E;
+        font-family: $burgerFont;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 9px;
+}
