@@ -285,15 +285,11 @@ a {
         @include burgerSummary;
         cursor: pointer;
     }
-    // &-summary:hover path{
-    //     color: $colorSelectSite;
-    // }
+    
     &-heading:hover{
         color: $colorSelectSite;
     }
-    // &-heading:hover path{
-    //     fill: $colorSelectSite;
-    // }
+    
     &-heading{
         @include burgerHeading;
         

@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style-base.css">
+    <!-- <link rel="stylesheet" href="style-base.css"> -->
     <link rel="stylesheet" href="style-catalog.css">
+    <link rel="stylesheet" href="style-base.css">
+    
 </head>
 <body>
     <nav class="nav container">
@@ -21,8 +23,31 @@
         </div>
         <div class="right-nav">
             <div class="show-menu">
-                <a class="menu" href=""><img src="img/menu.svg" alt="menu"></a>
-                <div class="show-menu-link">
+                <label for="burger"><img src="img/menu.svg" alt="menu"></label>
+                <input type="checkbox" name="" id="burger">
+                <nav class="nav-bergermenu">
+                    <ul>
+                        <li><a class="menu-title" href="#">MENU</a></li>
+                        <li><a class="menu-subtitle" href="#">MAN</a></li>
+                        <li><a class="menu-text" href="#">Bags</a></li>
+                        <li><a class="menu-text" href="#">Denim</a></li>
+                        <li><a class="menu-text" href="#">T-Shirts</a></li>
+                        <li><a class="menu-text" href="#">Accessories</a></li>
+                        <li><a class="menu-title" href="#">MENU</a></li>
+                        <li><a class="menu-subtitle" href="#">WOMAN</a></li>
+                        <li><a class="menu-text" href="#">Bags</a></li>
+                        <li><a class="menu-text" href="#">Denim</a></li>
+                        <li><a class="menu-text" href="#">T-Shirts</a></li>
+                        <li><a class="menu-text" href="#">Accessories</a></li>
+                        <li><a class="menu-title" href="#">MENU</a></li>
+                        <li><a class="menu-subtitle" href="#">KIDS</a></li>
+                        <li><a class="menu-text" href="#">Bags</a></li>
+                        <li><a class="menu-text" href="#">Denim</a></li>
+                        <li><a class="menu-text" href="#">T-Shirts</a></li>
+                        <li><a class="menu-text" href="#">Accessories</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="show-menu-link">
                     <h3 class="menu-title" >MENU</h3>
                     <a href="#" class="menu-subtitle">MAN</a>
                         <a href="#">
@@ -55,7 +80,7 @@
                             <p class="menu-text">Shirts</p>
                         </a>
                     <a href="#" class="menu-subtitle">KIDS</a>
-                </div>
+                </div> -->
             </div>
             
             <a class="lk" href=""><img src="img/lk.svg" alt="menu"></a>
