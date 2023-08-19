@@ -4,6 +4,8 @@ $gapGrid:30px;
 $mainFont: Lato;
 $burgerFont: Roboto;
 $widthBurgerMenu: 232px;
+$wifthCart: 652px;
+$widthImgCart: 262px;
 
 
 @mixin burgerMenu{
@@ -39,4 +41,35 @@ $widthBurgerMenu: 232px;
         font-weight: 400;
         line-height: normal;
         margin-bottom: 9px;
+}
+@mixin inputForm{
+    width: 359x;
+    height: 44px;
+    margin-bottom: 21px;
+    color: #222;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: 1px solid #EAEAEA;
+    padding-left: 17px;
+}
+@mixin blackout{
+    :after { 
+        content: ''; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;     
+        opacity: 0; 
+        width: $widthImgCart;
+        // background: url(img/Add\ to\ cart.svg) no-repeat center center; 
+        background-color: rgba(58, 56, 56, 0.86);
+    }
+    :hover:after { 
+        opacity: 0.7;     
+        transition: 0.5s;
+    }
 }

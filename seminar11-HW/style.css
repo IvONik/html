@@ -33,6 +33,7 @@ margin-left: 41px;
 .right-nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 26px;
     padding-bottom:15px;
     padding-right: 15px;

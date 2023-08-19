@@ -1,0 +1,227 @@
+@import 'vars';
+@import 'style-base';
+
+.top-head{
+    background:#F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 96px;
+}
+.top-head-heading{
+    color: $colorSelectSite;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+
+}
+.main-content{
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+.good{
+    width: $wifthCart;
+    height: 306px;
+    color: #fff;
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    display: flex;
+    gap: 31px;
+    margin-bottom: 40px; 
+
+    &-description{
+    padding-top: 22px;
+    }  
+
+    &-title{   
+        max-width: 262px;     
+        margin-bottom: 42px;
+        color: #222;
+        font-family: $mainFont;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &-text{
+        color: #575757;
+        font-family: $mainFont;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 6px;
+    }
+    &-price-color{
+        color: $colorSelectSite;
+    }
+
+    &-sum{
+        display: flex;
+        gap: 24px;
+    }
+    &-count{
+        width: 44px;
+        height: 25px;
+        border: 1px solid #EAEAEA;
+        color: #575757;
+        font-family: $mainFont;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &-close{
+        margin-top: 28px;
+        margin-right: 22px;
+    }
+    &-close:hover path{
+        fill: $colorSelectSite;
+    }
+
+}
+.good-img-link{
+    position: relative; 
+}
+.good-img-link{
+    @include blackout;
+}
+.buttons{
+    width:$wifthCart;
+    display: flex;
+    justify-content: space-between;
+        
+        a{
+            color: #000;
+            font-family: $mainFont;
+        }
+
+    &-button{
+        width: 235px;
+        height: 50px; 
+        border: 1px solid #EAEAEA;  
+        color: #000;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        cursor: pointer;
+        background-color: #FFF;
+    }
+    &-button:hover {
+        color: white;
+        background-color: $colorSelectSite;
+        transition: all .5s;
+    }
+    
+    &-button:hover a{
+        color: white;        
+        transition: all .5s;
+    }
+}
+.right-box{
+
+    &-title{
+        color: #222;
+        font-family: $mainFont;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-top: 17px;
+        margin-bottom: 20px;
+    }
+    // #number{
+    //     width: 9em;
+    // }    
+}
+.input-form{   
+    
+    @include inputForm;
+
+    &-submit{
+        // width: 101.408px;
+        height: 35px;        
+        background-color: #FFF;
+        padding-left: 17px;
+        padding-right: 17px;
+        color: #4A4A4A;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: 1px solid #EAEAEA;
+    }
+    &-submit:hover{
+    background-color: $colorSelectSite;
+    color: #FFF;
+    transition: all .5s;
+    }
+}
+.summ{
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+    margin-top: 57px;
+    padding-right: 27px;
+    padding-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+    
+    &-subtitle{
+        color: #4A4A4A;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 12px;
+    }
+    &-title{
+        color: #222;
+        font-family: Lato;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 21px;
+        
+    }
+    &-line{
+        width: 275px;        
+        margin-bottom: 17px ;
+        border: 1px solid #E2E2E2;
+    }
+    &-button{
+        width: 273px;
+        height: 50px;
+        background-color: $colorSelectSite;
+        color: #FFF;
+    }
+}
+.sum-button{
+    width: 273px;
+        height: 50px;
+        background-color: $colorSelectSite;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            color: #000;
+            transition: all .5s;
+        }
+}

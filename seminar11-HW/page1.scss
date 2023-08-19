@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'style-base';
 
 *{ 
     margin: 0;
@@ -143,47 +144,10 @@ a {
     opacity: 0.6;     
     transition: 0.5s;
 }
-// .img__link-layer{
-//     width: -webkit-fill-available;
-//     display: flex;
-//     justify-content: center;
-// }
-// .slider{
-//     width: 597px;
-    
-//     // position: absolute;
-//     // top: 50%;
-//     // left: 50%;
-//     // transform: translate(-50% -50%);
 
-//         &-line{
-//             display: flex;
-//             overflow: hidden;
-//             transition: all 1s;
-//         }
-//         &-img{
-//             width: 597px;
-//             height: 724px;
-//             border: 1px solid;
-//         }
-//         &-navigation{
-//             // position: absolute;
-//             // bottom: 16px;
-//             // left: 50px;
-//             // transform: translateX(-50%);
-//             display: flex;
-//                 &-bar{
-//                     height: 8px;
-//                     width: 30px;
-//                     margin: 6px;
-//                     background-color: #5D5D5D;
-//                 }
-//         }
-//         &-button{
-//             // position: absolute;
-//             // top: 50%;
-//         }
-// }
+
+
+
 .content{ 
 
     &-box{

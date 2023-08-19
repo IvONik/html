@@ -1,0 +1,36 @@
+h1{
+    font-family: merriweatherregular;
+}
+p{
+    font-family: robotoitalic;
+}
+h2{
+    text-shadow: 1px  red;    
+    color: white;
+    -webkit-text-stroke:1px rgb(240, 126, 126);
+}
+.treungle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 70px 70px 70px;
+    border-color: green green #007bff green;
+}
+.ramka{
+    width: 260px; height: 100px; 
+    border-style: solid;
+    border-image-width: 15px;
+    border-image-source: url(https://www.patrasevents.gr/imgsrv/f/full/1841479.jpg);
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.gradient {
+    height: 150px; 
+    width: 50%; 
+    margin: 0 auto;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+    border-image-slice: 1;
+    }
