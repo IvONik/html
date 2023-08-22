@@ -405,6 +405,20 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 
+.breadcrumbs__ul {
+  display: flex;
+}
+.breadcrumbs__li:hover .breadcrumbs-link {
+  color: #F16D7F;
+}
+.breadcrumbs__li:not(:last-child)::after {
+  content: "/";
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.breadcrumbs__li:last-child .breadcrumbs-link {
+  color: #F16D7F;
+}
 .breadcrumbs-link {
   color: #636363;
   font-family: Lato;
@@ -412,10 +426,6 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-}
-.breadcrumbs-link-page {
-  color: #F16D7F;
-  font-weight: 700;
 }
 
 .filter-sort {

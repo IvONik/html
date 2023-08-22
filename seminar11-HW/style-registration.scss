@@ -1,0 +1,132 @@
+
+@import 'vars';
+@import 'style-base';
+
+.top-head{
+    background:#F8F3F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 96px;
+
+        &-heading{
+        color: $colorSelectSite;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;  
+        }
+}
+.registration{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+.form{
+    width: 360px;
+
+    &__title{
+    color: #222;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 20px;
+
+        &__2{
+            margin-top:  33px;
+            color: #222;
+            font-family: $mainFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 20px;
+        }
+    }
+    &__input{
+        @include inputForm;
+        margin-bottom: 31px;
+    }
+    &__input:hover{
+        border: 1px solid #e5c3c3;
+    }
+    &__radio{
+        color: #000;
+        font-family: $mainFont;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 20px;        
+    }
+    
+    input[type='radio'] {
+        accent-color: $colorSelectSite;
+    }
+    
+    &__text{
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 39px;
+    }
+    &__submit{
+         // width: 101.408px;
+         height: 35px;        
+         background-color:$colorSelectSite;
+         padding-left: 17px;
+         padding-right: 17px;
+         color: #FFF;
+         font-family: $mainFont;
+         font-size: 11px;
+         font-style: normal;
+         font-weight: 300;
+         line-height: normal;
+         border: none;       
+        
+     }
+        
+     &__submit:hover{
+     
+     color: black;
+     transition: all .5s;
+     }
+    
+}
+.loyality{
+    width: 650px;
+
+    &__title{
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 22px;
+    }
+    &__text{
+        color: #000;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-bottom: 16px;
+        gap: 16px;
+        
+        &_long{
+margin-bottom: 22px;
+        }
+    }
+}
