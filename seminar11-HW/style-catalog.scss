@@ -19,6 +19,7 @@ summary {
     align-items: center;
     padding-top: 60px;
     padding-bottom: 60px; 
+    
 
     &-heading{
         color: $colorSelectSite;
@@ -27,20 +28,36 @@ summary {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        margin-left: 15px;
     }
 }
-.breadcrumbs-link{
-    color: #636363;
-    font-family: $mainFont;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-
-    &-page{
-        color: $colorSelectSite;
-        font-weight: 700;    
+.breadcrumbs{
+   
+    &__ul{
+        display: flex;
     }
+    &__li:hover .breadcrumbs-link{
+        color: $colorSelectSite;
+    }
+    &__li:not(:last-child)::after {
+        content: "/";
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    &__li:last-child .breadcrumbs-link{
+        color: $colorSelectSite;
+        margin-right: 15px;
+    }
+        &-link{
+        color: #636363;
+        font-family: $mainFont;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+       
+}
 }
 
 // .slider{
@@ -82,7 +99,7 @@ summary {
 }
 .filter{
     
-    padding-top: 13px;    
+    padding-top: 17px;    
     box-sizing: border-box;
     width: ($widhtSite - $gapGrid*2) / 3;
     position: relative;
@@ -201,9 +218,14 @@ summary {
             justify-content: center;
             gap: $gapGrid;  
             display: grid;          
-            grid-template-columns: repeat(3, ($widhtSite - $gapGrid*2) / 3);
+            // grid-template-columns: repeat(3, ($widhtSite - $gapGrid*2) / 3);
+            
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-columns: repeat(3, minmax(311px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             flex-direction: column;
             margin-bottom: 48px;
+           
         }
         &-img{
             width: 100%;
@@ -241,4 +263,43 @@ summary {
             font-weight: 400;
             line-height: normal;
         }
+}
+@media screen and (max-width: 1140px){
+    
+    .product-box{
+        gap: 16px;
+        padding-left: calc(50% - 374px);
+        padding-right: calc(50% - 374px);
+    }
+}
+@media screen and (max-width: 750px){
+    
+    .product-box, .filter-sort{
+        
+        padding-left: calc(50% - 170px);
+        padding-right: calc(50% - 170px);
+        gap: 16px;
+    }
+    .top-head{
+        flex-direction: column;
+        gap: 32px;}
+    .filter-heading{
+        display: none;
+        
+    }
+    .sort1-heading{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 320px){
+    .product{
+        width: 340px;
+    }
+    .product-box{
+        
+        padding-left: calc(50% - 170px);
+        padding-right: calc(50% - 170px);
+        
+    }
+
 }

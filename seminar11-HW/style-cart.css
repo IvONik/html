@@ -384,7 +384,6 @@ ul {
   padding-bottom: 60px;
   margin-bottom: 96px;
 }
-
 .top-head-heading {
   color: #F16D7F;
   font-family: Lato;
@@ -392,6 +391,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 15px;
 }
 
 .main-content {
@@ -409,6 +409,9 @@ ul {
   display: flex;
   gap: 31px;
   margin-bottom: 40px;
+}
+.good-img {
+  height: 100%;
 }
 .good-description {
   padding-top: 22px;
@@ -479,7 +482,6 @@ ul {
 }
 
 .buttons {
-  width: 652px;
   display: flex;
   justify-content: space-between;
 }
@@ -608,4 +610,68 @@ ul {
 .summ-button:hover {
   color: #000;
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1170px) {
+  .main-content {
+    display: grid;
+    padding-left: calc(50% - 367px);
+    padding-right: calc(50% - 367px);
+    gap: 64px;
+  }
+  .goods-box {
+    display: grid;
+    justify-items: center;
+  }
+  .buttons {
+    justify-content: center;
+    gap: 48px;
+  }
+  .right-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+  }
+  .summ, .form {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-content {
+    padding-left: calc(50% - 325px);
+    padding-right: calc(50% - 325px);
+  }
+  .right-box {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .main-content, .top-head-heading {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .good {
+    width: 360px;
+    height: 188px;
+  }
+  .good-description {
+    padding-top: 13px;
+  }
+  .good-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .good-text {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .buttons {
+    gap: 9px;
+    width: auto;
+  }
+  .buttons-button {
+    width: 175px;
+  }
 }/*# sourceMappingURL=style-cart.css.map */

@@ -62,7 +62,11 @@
             <div class="goods-box" >
                 <a href="#" class="good-img-link">
                     <div class="good">
-                        <img class="good-img" src="img/good7.jpg" alt="formen">
+                        <picture>
+                            
+                            <source media="(max-width: 650px)" srcset="img/dood1-143.jpg">
+                            <img class="good-img" src="img/good7.jpg" alt="formen">
+                        </picture>
                         <div class="good-description">
                             <h2 class="good-title" >MANGO  PEOPLE  T&nbsp;-&nbsp;SHIRT</h2>
                             
@@ -82,7 +86,11 @@
                 </a>
                 <a href="#" class="good-img-link">
                     <div class="good">
-                        <img src="img/good9.jpg" alt="formen">
+                        <picture>
+                            
+                            <source media="(max-width: 650px)" srcset="img/good2-143.jpg">
+                            <img class="good-img" src="img/good9.jpg" alt="formen">
+                        </picture>
                         <div class="good-description">
                             <h2 class="good-title" >MANGO  PEOPLE  T&nbsp;-&nbsp;SHIRT</h2>
                             <!-- <p class="good-text"> -->
@@ -107,25 +115,15 @@
                 </div>
             </div>
             <div class="right-box">
-                <h2 class="right-box-title">SHIPPING ADRESS</h2>
-                <br action="#">
-                    <input class="right-box_input-form" type="text" placeholder="Bangladesh" autocomplete on></br>
-                    <input class="right-box_input-form" type="text" placeholder="State"> </br>
-                    <!-- <p><select  class="input-form" name="State" aria-placeholder="State">
-                        <optgroup label="Europe">
-                        <option value="#">austria </option>
-                        <option value="#">germany </option>
-                        <option value="#">france</option>
-                        </optgroup>
-                        <optgroup  label="asia">
-                        <option value="#">China</option>
-                        <option value="#">kazakhstan</option>
-                        <option value="#">japan</option>
-                        </optgroup>
-                    </select></p> -->
-                    <input class="right-box_input-form" type="number" placeholder="Postcode / Zip" id="number"></br>
-                    <input class="right-box_input-form-submit" type="submit" value="GET A QUOTE">
-                </form>
+                <div class="form">
+                    <h2 class="right-box-title">SHIPPING ADRESS</h2>
+                    <br action="#">
+                        <input class="right-box_input-form" type="text" placeholder="Bangladesh" autocomplete on></br>
+                        <input class="right-box_input-form" type="text" placeholder="State"> </br>
+                        <input class="right-box_input-form" type="number" placeholder="Postcode / Zip" id="number"></br>
+                        <input class="right-box_input-form-submit" type="submit" value="GET A QUOTE">
+                    
+                </div>
                 <div class="summ">
                     <h3 class="summ-subtitle">SUB TOTAL         $900</h3>
                     <h2 class="summ-title">GRAND TOTAL <span class="good-price-color" >$900</span></h2>
