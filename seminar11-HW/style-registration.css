@@ -391,16 +391,22 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 15px;
 }
 
 .registration {
   display: flex;
   justify-content: space-between;
   margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 22px;
 }
 
 .form {
   width: 360px;
+  margin-left: 15px;
 }
 .form__title {
   color: #222;
@@ -481,7 +487,7 @@ ul {
 }
 
 .loyality {
-  width: 650px;
+  margin-right: 15px;
 }
 .loyality__title {
   color: #000;
@@ -504,4 +510,19 @@ ul {
 }
 .loyality__text_long {
   margin-bottom: 22px;
+}
+
+@media screen and (max-width: 750px) {
+  .registration {
+    margin-left: calc(50% - 180px);
+    margin-right: calc(50% - 180px);
+    gap: 40px;
+  }
+  .top-head {
+    margin-bottom: 41px;
+  }
+  .top-head-heading {
+    margin-left: calc(50% - 180px);
+    margin-right: calc(50% - 180px);
+  }
 }/*# sourceMappingURL=style-registration.css.map */

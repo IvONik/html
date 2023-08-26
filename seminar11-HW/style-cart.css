@@ -473,7 +473,6 @@ ul {
   right: 0;
   bottom: 0;
   opacity: 0;
-  width: 262px;
   background-color: rgba(61, 54, 54, 0.86);
 }
 .good-img-link :hover:after {

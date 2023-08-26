@@ -264,6 +264,44 @@ summary {
             line-height: normal;
         }
 }
+ul.pagination{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+
+    & li a {
+    color: black;
+    float: left;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+& li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+& li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+}
+
+
+ul.pagination li a.active {
+    background-color: $colorSelectSite;
+    color: white;
+    border: 1px solid $colorSelectSite;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #f1b5bd;
+}
+
+
 @media screen and (max-width: 1140px){
     
     .product-box{
